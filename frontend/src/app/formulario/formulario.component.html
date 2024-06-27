@@ -1,0 +1,36 @@
+<div class="container">
+  <form (ngSubmit)="guardarFactura()">
+    <div class="form-group">
+      <h1 class="text-center text-primary mb-4">Facturas Gastos</h1>
+      <div class="mb-3 border p-3">
+        <label for="ruc" class="form-label">RUC</label>
+        <input type="text" class="form-control" id="ruc" name="ruc" [(ngModel)]="ruc" />
+      </div>
+      <div class="mb-3 border p-3">
+        <label for="valor" class="form-label">Valor de factura</label>
+        <input type="number" class="form-control" id="valor" name="valor" [(ngModel)]="valor"/>
+      </div>
+      <div class="mb-3 border p-3">
+        <label for="gasto" class="form-label">Gasto</label>
+        <select class="form-select" aria-label="gasto" name="gasto" [(ngModel)]="gasto">
+          <option selected disabled>Escoja el tipo de gasto</option>
+          <option value="Salud">Salud</option>
+          <option value="Alimentacion">Alimentación</option>
+          <option value="Vestimenta">Vestimenta</option>
+          <option value="Vivienda">Vivienda</option>
+          <option value="Educacion">Educación</option>
+          <option value="Ninguno">Ninguno</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Agregar</button>
+    </div>
+  </form>
+  <div class="mt-4 border p-3">
+    <h2>Detalles de la Factura:</h2>
+    <div class="mb-2">
+      <p class="mb-1"><strong>RUC:</strong> {{ ruc }}</p>
+      <p class="mb-1"><strong>VALOR:</strong> {{ valor }}</p>
+      <p class="mb-1"><strong>TIPO GASTO:</strong> {{ gasto }}</p>
+    </div>
+  </div>
+</div>

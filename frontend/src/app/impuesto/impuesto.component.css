@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f8ff; /* Color de fondo azul claro */
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-container {
+    background-color: rgba(176, 196, 222, 0.8); /* Color de fondo azulado */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 80%; /* Ancho del formulario al 80% */
+    max-width: 600px; /* Ancho máximo del formulario */
+  }
+  
+  .form-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333; /* Color de texto oscuro */
+  }
+  
+  /* Estilos adicionales para los elementos del formulario */
+  /* .form-group, .form-label, .form-control, .btn, etc. */
+  
