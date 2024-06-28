@@ -35,6 +35,6 @@ export class UsuarioService {
   constructor(private httpclient: HttpClient) { }
 
   obtenerDatos(): Observable<User[]> {
-    return this.httpclient.get<User[]>('https://jsonplaceholder.typicode.com/users');
+    return this.httpclient.get<User[]>('https://jsonplaceholder.org/users');
   }
 }
